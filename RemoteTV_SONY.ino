@@ -5,12 +5,12 @@
 
 #define DEVICE_NAME   "SONY TV"
 
-#define IR_PIN        10
+#define IR_PIN        23
 
 #define SONY_OFF      0xF50
 #define SONY_ON       0x750
 
-RFControl rf(10);
+RFControl rf(IR_PIN);
 
 void XMIT_SONY(uint32_t code){
 
